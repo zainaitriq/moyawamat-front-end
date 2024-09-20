@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work Zone - HTMl</title>
+  <!-- GLightBox -->
+  <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+  <!-- Aos -->
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <!-- Nice Select -->
+  <link rel="stylesheet" href="assets/css/nice-select.css" />
+  <!-- Quill CSS -->
+  <link href="assets/css/quill.core.css" rel="stylesheet" />
+  <link href="assets/css/quill.snow.css" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font-awesome CSS -->
+  <link href="assets/css/font-awesome-all.min.css" rel="stylesheet" />
+  <!-- Swiper CSS -->
+  <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Main CSS -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- Responsive CSS -->
+  <link href="assets/css/resposive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Menu Start -->
+  <header class="header-primary">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl justify-content-between">
+        <a href="index.html">
+          <img src="assets/img/logo/logo-dark.png" alt="" />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="d-block d-xl-none">
+              <div class="logo">
+                <a href="index.html"><img src="assets/img/logo/logo-dark.png" alt="" /></a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-4 mt-4">
+            <div class="d-flex d-lg-none">
+              <a href="signin.html" class="header-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.5 7.55556C8.55134 7.55556 10.2143 5.86419 10.2143 3.77778C10.2143 1.69137 8.55134 0 6.5 0C4.44866 0 2.78571 1.69137 2.78571 3.77778C2.78571 5.86419 4.44866 7.55556 6.5 7.55556ZM6.5 17C10.0899 17 13 15.3086 13 13.2222C13 11.1358 10.0899 9.44444 6.5 9.44444C2.91015 9.44444 0 11.1358 0 13.2222C0 15.3086 2.91015 17 6.5 17Z"
+                    fill="white" />
+                </svg>
+                Login</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-right d-flex align-items-center gap-4">
+          <div class="header-dropdown d-none d-sm-flex gap-2 align-items-center">
+            <div class="d-flex align-items-center">
+              <svg class="text-lime-300 flex-shrink-0 mt-n2" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                viewBox="0 0 14 14" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.4881 2.14377C5.2365 2.77789 5.03173 3.54816 4.89336 4.41291C5.56283 4.35158 6.27016 4.31894 7.00002 4.31894C7.72988 4.31894 8.43721 4.35158 9.10668 4.41291C8.96831 3.54816 8.76354 2.77789 8.51194 2.14377C8.27012 1.53428 7.99547 1.07703 7.71771 0.780915C7.441 0.485938 7.1983 0.386864 7.00002 0.386864C6.80174 0.386864 6.55903 0.485938 6.28233 0.780915C6.00456 1.07703 5.72992 1.53428 5.4881 2.14377ZM4.50048 1.7455C4.18655 2.53672 3.94567 3.48985 3.79803 4.54354C3.07129 4.6516 2.40808 4.79577 1.83286 4.96975C1.16357 5.17217 0.583188 5.42386 0.158263 5.72771C0.104579 5.7661 0.0515911 5.80668 3.20909e-05 5.84945C0.469066 2.9266 2.6958 0.597519 5.55163 8.85086e-07C5.53747 0.0145331 5.52342 0.0292256 5.50949 0.0440711C5.10854 0.471503 4.77196 1.06123 4.50048 1.7455ZM8.4484 0C8.46257 0.0145325 8.47662 0.0292253 8.49055 0.0440711C8.8915 0.471503 9.22807 1.06123 9.49956 1.7455C9.81349 2.53672 10.0544 3.48985 10.202 4.54354C10.9287 4.6516 11.592 4.79577 12.1672 4.96975C12.8365 5.17217 13.4168 5.42386 13.8418 5.72772C13.8955 5.7661 13.9484 5.80668 14 5.84945C13.531 2.92661 11.3042 0.597517 8.4484 0ZM14 8.15034C13.9485 8.19312 13.8955 8.2337 13.8418 8.2721C13.4168 8.57595 12.8365 8.82764 12.1672 9.03007C11.592 9.20404 10.9287 9.34822 10.202 9.45627C10.0544 10.51 9.81349 11.4631 9.49956 12.2543C9.22807 12.9386 8.8915 13.5283 8.49055 13.9557C8.47655 13.9707 8.46243 13.9854 8.44819 14C11.3042 13.4026 13.5311 11.0733 14 8.15034ZM5.55185 14C5.53761 13.9854 5.52349 13.9707 5.50949 13.9557C5.10854 13.5283 4.77196 12.9386 4.50048 12.2543C4.18655 11.4631 3.94567 10.51 3.79803 9.45627C3.07129 9.34822 2.40808 9.20404 1.83286 9.03007C1.16357 8.82764 0.583188 8.57595 0.158263 8.2721C0.104568 8.2337 0.0515691 8.19312 0 8.15034C0.468976 11.0733 2.69584 13.4026 5.55185 14ZM2.13851 8.00291C2.58965 8.13936 3.10872 8.25764 3.68083 8.35255C3.64845 7.91282 3.63163 7.46069 3.63163 6.99991C3.63163 6.53912 3.64845 6.08699 3.68083 5.64727C3.10872 5.74218 2.58965 5.86046 2.13851 5.9969C1.52453 6.1826 1.0664 6.39307 0.773646 6.60242C0.467074 6.82164 0.440533 6.96373 0.440533 6.99991C0.440533 7.03608 0.467074 7.17818 0.773646 7.3974C1.0664 7.60674 1.52453 7.81721 2.13851 8.00291ZM4.69533 6.99991C4.69533 7.51552 4.71763 8.01627 4.75957 8.4965C5.45881 8.56879 6.21241 8.60849 7.00002 8.60849C7.78763 8.60849 8.54123 8.56879 9.24047 8.4965C9.28241 8.01627 9.3047 7.51552 9.3047 6.99991C9.3047 6.4843 9.28241 5.98354 9.24047 5.50331C8.54123 5.43102 7.78763 5.39133 7.00002 5.39133C6.21241 5.39133 5.45881 5.43102 4.75957 5.50331C4.71763 5.98354 4.69533 6.4843 4.69533 6.99991ZM5.4881 11.856C5.2365 11.2219 5.03173 10.4517 4.89336 9.58691C5.56283 9.64823 6.27016 9.68087 7.00002 9.68087C7.72988 9.68087 8.43721 9.64823 9.10668 9.58691C8.96831 10.4517 8.76354 11.2219 8.51194 11.856C8.27012 12.4655 7.99547 12.9228 7.71771 13.2189C7.441 13.5139 7.1983 13.613 7.00002 13.613C6.80174 13.613 6.55903 13.5139 6.28233 13.2189C6.00456 12.9228 5.72992 12.4655 5.4881 11.856ZM11.8615 8.00291C11.4104 8.13936 10.8913 8.25764 10.3192 8.35255C10.3516 7.91282 10.3684 7.46069 10.3684 6.99991C10.3684 6.53912 10.3516 6.08699 10.3192 5.64727C10.8913 5.74218 11.4104 5.86046 11.8615 5.9969C12.4755 6.1826 12.9336 6.39307 13.2264 6.60242C13.533 6.82164 13.5595 6.96373 13.5595 6.99991C13.5595 7.03609 13.533 7.17818 13.2264 7.3974C12.9336 7.60674 12.4755 7.81721 11.8615 8.00291Z"
+                  fill="currentColor" />
+              </svg>
+              <select id="language" class="select-dropdown border-0 shadow-none ps-1">
+                <option value="">EN</option>
+                <option value="">AR</option>
+
+              </select>
+            </div>
+          </div>
+          <div class="align-items-center d-none d-lg-flex">
+            <a href="signin.html" class="w-btn-secondary-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.5 7.55556C8.55134 7.55556 10.2143 5.86419 10.2143 3.77778C10.2143 1.69137 8.55134 0 6.5 0C4.44866 0 2.78571 1.69137 2.78571 3.77778C2.78571 5.86419 4.44866 7.55556 6.5 7.55556ZM6.5 17C10.0899 17 13 15.3086 13 13.2222C13 11.1358 10.0899 9.44444 6.5 9.44444C2.91015 9.44444 0 11.1358 0 13.2222C0 15.3086 2.91015 17 6.5 17Z"
+                  fill="white" />
+              </svg>
+              Login</a>
+
+          </div>
+          <button class="navbar-toggler d-block d-xl-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Menu End -->
+
+  <!-- Secondary Nav -->
+  <!-- <div class="d-none d-xl-block secondary-nav-wrapper">
+      <div class="container">
+        <div class="position-relative">
+          <nav
+            class="secondary-nav-container bg-white position-absolute w-100 start-0 z-3 border-top"
+          >
+            <ul
+              class="secondary-nav d-flex justify-content-between align-items-center"
+            >
+              <li><a href="#">Agriculture</a></li>
+              <li><a href="#">Plowing</a></li>
+              <li><a href="#">Picking fruits</a></li>
+              <li><a href="#">Fertilizing</a></li>
+              <li><a href="#">Watering</a></li>
+              
+              <li>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="19" cy="19" r="19" fill="#F7F5F0" />
+                    <path
+                      d="M17 19C17 20.0178 17.8283 20.8461 18.8462 20.8461C19.864 20.8461 20.6923 20.0178 20.6923 19C20.6923 17.9821 19.864 17.1538 18.8462 17.1538C17.8283 17.1538 17 17.9821 17 19Z"
+                      fill="#06131C"
+                    />
+                    <path
+                      d="M17 25.1538C17 26.1716 17.8283 26.9999 18.8462 26.9999C19.864 26.9999 20.6923 26.1716 20.6923 25.1538C20.6923 24.1359 19.864 23.3076 18.8462 23.3076C17.8283 23.3076 17 24.1359 17 25.1538Z"
+                      fill="#06131C"
+                    />
+                    <path
+                      d="M17 12.8462C17 13.864 17.8283 14.6923 18.8462 14.6923C19.864 14.6923 20.6923 13.864 20.6923 12.8462C20.6923 11.8283 19.864 11 18.8462 11C17.8283 11 17 11.8283 17 12.8462Z"
+                      fill="#06131C"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div> -->
+  <!-- Secondary Nav End -->
+
+  <!-- Main Start -->
+  <main>
+    <!-- Breadcrumb -->
+    <section class="w-breadcrumb-area" style="
+          background: url('assets/img/logo/header.jpg') no-repeat
+            center center/cover;
+        ">
+      <div class="container">
+        <div class="row">
+          <div class="col-auto">
+            <div class="position-relative z-2" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+              <h2 class="section-title-light mb-2">Sign In</h2>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb w-breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Login
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Breadcrumb End -->
+
+    <!-- Login Form -->
+    <section class="py-110 bg-offWhite">
+      <div class="container">
+        <!-- <div class="mb-5">
+            <div class="row justify-content-center">
+              <div class="col-auto">
+                <div class="d-flex align-items-center gap-3">
+                  <a href="" class="w-form-btn">Freelancer</a>
+                  <a href="" class="w-form-btn-outline">Buyer</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        <div class="bg-white rounded-3 p-3">
+          <div class="row g-4">
+            <div class="col-lg-6 p-3 p-lg-5">
+              <div class="mb-40">
+                <h2 class="section-title mb-2">Log in</h2>
+                <p class="section-desc">Welcome to Moyawamat</p>
+              </div>
+              <form>
+                <div class="form-container d-flex flex-column gap-4">
+                  <div class="form-input">
+                    <label for="eamil" class="form-label">Phone Number <span class="text-lime-300">*</span>
+                    </label>
+                    <input type="text" id="email" placeholder="07XXXXXXXX" class="form-control shadow-none" />
+                  </div>
+                  <div class="form-input">
+                    <label for="password" class="form-label">Password <span class="text-lime-300">*</span></label>
+                    <input type="password" id="password" placeholder="********" class="form-control shadow-none" />
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-2 form-input">
+                      <input type="checkbox" class="form-check" />
+                      <label class="form-check-label">Remember Me</label>
+                    </div>
+                    <div>
+                      <a href="#" class="form-forget-pass">Forget Password</a>
+                    </div>
+                  </div>
+                  <div class="d-grid">
+                    <button class="w-btn-secondary-lg">Log In</button>
+                  </div>
+                </div>
+              </form>
+              <!-- <div class="py-5">
+                  <div
+                    class="form-divider d-flex justify-content-center align-items-center"
+                  >
+                    <span class="form-divider-text">OR</span>
+                  </div>
+                </div>
+                <div
+                  class="d-flex gap-3 justify-content-center align-items-center social-login"
+                >
+                  <button class="social-login-item">
+                    <svg
+                      width="25"
+                      height="26"
+                      viewBox="0 0 25 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.26283 2.6C5.26283 4.03594 4.0847 5.2 2.63141 5.2C1.17812 5.2 0 4.03594 0 2.6C0 1.16406 1.17812 0 2.63141 0C4.0847 0 5.26283 1.16406 5.26283 2.6ZM5.26283 8.45V26H0V8.45H5.26283ZM9.21094 8.45001H14.4738V9.54385C15.2968 9.25641 16.1825 9.10001 17.1052 9.10001C21.465 9.10001 24.9994 12.5922 24.9994 16.9V26H19.7366V16.9C19.7366 15.4641 18.5585 14.3 17.1052 14.3C15.6519 14.3 14.4738 15.4641 14.4738 16.9V26H9.21094V16.9V8.45001Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                  <button class="social-login-item">
+                    <svg
+                      width="28"
+                      height="24"
+                      viewBox="0 0 28 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.3718 0C16.0451 0 13.3484 2.68629 13.3484 6C13.3484 6.50073 13.4099 6.98714 13.526 7.45211C10.3273 7.45211 5.50934 6.83862 1.4856 3.01441C0.95054 2.50588 -0.0360954 2.84588 0.00101806 3.56351C0.597337 15.094 5.80286 18.4574 8.48355 18.6667C6.75251 20.2885 4.23797 21.5687 1.70768 22.1433C1.03989 22.2949 0.874928 22.9884 1.52792 23.1899C3.33846 23.7485 5.92998 23.9637 7.32491 24C17.1931 24 25.2137 16.1207 25.3922 6.33344C26.6878 5.53417 27.5177 3.79875 27.984 2.56936C28.0976 2.26995 27.5803 1.92109 27.2706 2.04339C26.3028 2.42561 25.0741 2.51623 24.0274 2.19271C22.9227 0.853899 21.2474 0 19.3718 0Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                  <button class="social-login-item">
+                    <svg
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13 14.95V11.05L25.8547 11.05C25.9504 11.6861 26 12.3372 26 13C26 20.1797 20.1797 26 13 26C5.8203 26 0 20.1797 0 13C0 5.8203 5.8203 0 13 0C16.5898 0 19.8398 1.45507 22.1924 3.80761L19.4347 6.56533C17.7879 4.91855 15.5129 3.9 13 3.9C7.97421 3.9 3.9 7.97421 3.9 13C3.9 18.0258 7.97421 22.1 13 22.1C17.3565 22.1 20.9979 19.0387 21.8906 14.95H13Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </button>
+                </div> -->
+              <div class="mt-4">
+                <p class="text-center form-text">
+                  Don’t have an account ?
+                  <a href="signup.html"> Create Account </a>
+                </p>
+              </div>
+              <div class="mt-4">
+                <p class="text-center form-text">
+                  <a href="admin-login.html"> Admin login </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="login-img">
+                <img src="assets/img/others/worker.jpg" class="img-fluid w-100" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Login Form End -->
+  </main>
+  <!-- Main End -->
+
+  <!-- Footer  -->
+  <footer class="footer-area">
+    <div class="bg-dark-300 pt-110">
+      <div class="container">
+
+        <!-- Footer Widgets -->
+        <div class="footer-widgets py-60">
+          <div class="row justify-content-between row-gap-4">
+            <div class="col-md-6 col-xl-3" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+              <div class="mb-5">
+                <h3 class="footer-widget-title fw-bold mb-4">Contact Us</h3>
+                <ul class="footer-info-widget p-0">
+                  <li class="d-flex gap-3 align-items-center py-2 footer-info-widget-item">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.3497 15.9951C14.0086 15.9654 13.6674 15.9407 13.3263 15.9011C11.1211 15.654 9.07412 14.9472 7.19033 13.7708C5.2126 12.5351 3.61064 10.9237 2.39433 8.94161C1.41041 7.34507 0.762699 5.62496 0.441317 3.77634C0.302876 2.98054 0.233655 2.1798 0.223767 1.36917C0.213878 0.553599 0.75281 0 1.56863 0C2.49816 0 3.42275 0 4.35229 0C5.14338 0 5.67242 0.504171 5.6922 1.29503C5.71692 2.24405 5.85042 3.16837 6.13719 4.07291C6.29541 4.57708 6.19158 5.01205 5.85536 5.4223C5.40543 5.9759 4.99011 6.55422 4.56489 7.12759C4.54017 7.16219 4.53523 7.23633 4.555 7.27587C5.48454 9.05035 6.79973 10.4541 8.55002 11.4378C8.70824 11.5267 8.87141 11.6849 9.02468 11.675C9.17301 11.6651 9.31145 11.4872 9.45484 11.3834C9.95422 11.0077 10.4486 10.6222 10.948 10.2515C11.2595 10.0192 11.6106 9.95984 11.9863 10.0488C12.4659 10.1625 12.9406 10.3157 13.4251 10.3948C13.9097 10.4739 14.4091 10.4986 14.8986 10.5283C15.4375 10.5579 15.8528 10.7655 16.0951 11.2598C16.1495 11.3735 16.1791 11.502 16.2236 11.6256C16.2236 12.7179 16.2236 13.8103 16.2236 14.9076C16.1346 15.1053 16.0704 15.3179 15.9566 15.4958C15.7688 15.7924 15.4573 15.916 15.1309 16C14.8689 15.9951 14.6068 15.9951 14.3497 15.9951Z"
+                        fill="currentColor" />
+                    </svg>
+                    +(962) 790666873
+                  </li>
+                  <li class="d-flex gap-3 align-items-center py-2 footer-info-widget-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12" fill="none">
+                      <path
+                        d="M17.0001 10.6994C16.9513 10.846 16.9069 10.9882 16.8626 11.1215C15.1461 9.41089 13.4384 7.71363 11.7263 6.01192C13.4473 4.30132 15.1549 2.60405 16.8714 0.902344C16.9069 1.00898 16.9557 1.1556 17.0001 1.30222C17.0001 4.43461 17.0001 7.56701 17.0001 10.6994Z"
+                        fill="currentColor" />
+                      <path
+                        d="M0.859375 0.125118C1.05897 0.0806868 1.23195 0.0406989 1.4005 0.00959711C1.45373 -0.00373221 1.51139 0.000710897 1.56461 0.000710897C6.18192 0.000710897 10.8037 0.000710897 15.421 0.005154C15.6472 0.005154 15.8734 0.0629144 16.0996 0.0940161C16.104 0.116232 16.104 0.134004 16.1085 0.15622C16.0685 0.196208 16.0286 0.240639 15.9887 0.280627C13.6512 2.63103 11.3182 4.98588 8.98069 7.33628C8.6569 7.66507 8.34198 7.66507 8.0182 7.34072C5.68071 4.98588 3.33879 2.63103 1.00131 0.276184C0.96139 0.236196 0.925907 0.196208 0.859375 0.125118Z"
+                        fill="currentColor" />
+                      <path
+                        d="M10.9856 6.754C12.6977 8.45571 14.4009 10.1485 16.1396 11.8769C15.9356 11.9213 15.7715 11.9613 15.5985 11.9924C15.532 12.0058 15.4654 11.9969 15.3989 11.9969C10.7949 11.9969 6.19534 11.9969 1.59135 11.9969C1.3474 11.9969 1.11232 11.9747 0.872803 11.8502C2.58932 10.1441 4.29254 8.45127 6.00906 6.74512C6.0268 6.75845 6.06672 6.79843 6.11107 6.83842C6.51913 7.24719 6.92276 7.65595 7.33082 8.06472C8.01832 8.7534 8.97194 8.7534 9.65943 8.06472C10.1118 7.62041 10.5598 7.1761 10.9856 6.754Z"
+                        fill="currentColor" />
+                      <path
+                        d="M0.114213 11.1218C0.0787293 10.9307 0.00332659 10.7263 0.00332659 10.522C-0.00110886 7.50954 -0.00110886 4.49711 0.00332659 1.48024C0.00332659 1.27586 0.0742938 1.07147 0.114213 0.875977C1.84404 2.59546 3.55169 4.29717 5.26821 6.00332C3.55612 7.70059 1.84847 9.39786 0.114213 11.1218Z"
+                        fill="currentColor" />
+                    </svg>infoyourortencey@gmail.com
+                  </li>
+                  <li class="d-flex gap-3 align-items-center py-2 footer-info-widget-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="23" viewBox="0 0 16 23" fill="none">
+                      <path
+                        d="M8.22365 23C8.0718 23 7.91995 23 7.7681 23C7.28825 22.8742 6.94204 22.6047 6.69908 22.1674C4.82222 18.7474 2.92713 15.3333 1.03812 11.9133C0.157396 10.3201 -0.164525 8.63099 0.0784345 6.82812C0.503613 3.7375 2.86032 1.06615 5.91553 0.275521C6.40145 0.14974 6.91167 0.0898438 7.40366 0C7.79847 0 8.19328 0 8.58809 0C8.91608 0.0479167 9.25015 0.0838542 9.57207 0.14974C13.1982 0.8625 15.9194 4.09089 15.9983 7.74453C16.0287 9.27786 15.64 10.6974 14.899 12.0391C13.0525 15.3573 11.212 18.6875 9.38378 22.0177C9.11652 22.5029 8.78245 22.8682 8.22365 23ZM8.00498 3.95312C6.20708 3.95312 4.73111 5.39661 4.72503 7.16953C4.71896 8.96042 6.18279 10.4219 7.99284 10.4219C9.79074 10.4219 11.2667 8.97838 11.2728 7.20547C11.2789 5.41458 9.80896 3.95312 8.00498 3.95312Z"
+                        fill="currentColor" />
+                    </svg>Al Madinah Al Munawwarah St.<br />,Eleven business center ,
+                    Amman, JOR
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="footer-widget-title fw-bold mb-4">Download App</h3>
+                <div class="d-flex gap-3">
+                  <a href="#">
+                    <img src="assets/img/logo/play.svg" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="assets/img/logo/appstore.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                <h3 class="footer-widget-title fw-bold mb-4">Services</h3>
+                <nav>
+                  <ul class="footer-nav-list list-unstyled">
+                    <li class="footer-nav-list-item py-1">
+                      <a href="hardware.html" class="footer-nav-link d-flex gap-2 align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                          <path d="M8.57894 9L12.2456 5M12.2456 5L8.57894 0.999999M12.2456 5L1.24561 5"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                       Hardware
+                      </a>
+                    </li>
+                    <li class="footer-nav-list-item py-2">
+                      <a href="software.html" class="footer-nav-link d-flex gap-2 align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                          <path d="M8.57894 9L12.2456 5M12.2456 5L8.57894 0.999999M12.2456 5L1.24561 5"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                       Software
+                      </a>
+                    </li>
+                    <li class="footer-nav-list-item py-2">
+                      <a href="orgware.html" class="footer-nav-link d-flex gap-2 align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                          <path d="M8.57894 9L12.2456 5M12.2456 5L8.57894 0.999999M12.2456 5L1.24561 5"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        Orgware
+                      </a>
+                    </li>
+                    
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                <h3 class="footer-widget-title fw-bold mb-4">About</h3>
+                <nav>
+                  <ul class="footer-nav-list list-unstyled">
+                    <li class="footer-nav-list-item py-1">
+                      <a href="careers.html" class="footer-nav-link d-flex gap-2 align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                          <path d="M8.57894 9L12.2456 5M12.2456 5L8.57894 0.999999M12.2456 5L1.24561 5"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Careers
+                      </a>
+                    </li>
+                    <li class="footer-nav-list-item py-2">
+                      <a href="blogs.html" class="footer-nav-link d-flex gap-2 align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                          <path d="M8.57894 9L12.2456 5M12.2456 5L8.57894 0.999999M12.2456 5L1.24561 5"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Blog & News
+                      </a>
+                    </li>
+                   
+                    <li class="footer-nav-list-item py-2">
+                      <a href="privacy-policy.html" class="footer-nav-link d-flex gap-2 align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                          <path d="M8.57894 9L12.2456 5M12.2456 5L8.57894 0.999999M12.2456 5L1.24561 5"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Privacy Policy
+                      </a>
+                    </li>
+                    <li class="footer-nav-list-item py-2">
+                      <a href="terms-conditions.html" class="footer-nav-link d-flex gap-2 align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                          <path d="M8.57894 9L12.2456 5M12.2456 5L8.57894 0.999999M12.2456 5L1.24561 5"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Terms of Service
+                      </a>
+                    </li>
+                    
+                    <li class="footer-nav-list-item py-2">
+                      <a href="faqs.html" class="footer-nav-link d-flex gap-2 align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                          <path d="M8.57894 9L12.2456 5M12.2456 5L8.57894 0.999999M12.2456 5L1.24561 5"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        FAQ's
+                      </a>
+                    </li>
+                    <li class="footer-nav-list-item py-2">
+                      <a href="contact.html" class="footer-nav-link d-flex gap-2 align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                          <path d="M8.57894 9L12.2456 5M12.2456 5L8.57894 0.999999M12.2456 5L1.24561 5"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Contact
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+                <h3 class="footer-widget-title fw-bold mb-4">
+                  Help & Supports
+                </h3>
+                <nav>
+                  <ul class="footer-nav-list list-unstyled">
+                    <li class="footer-nav-list-item py-1">
+                      <a href="contact.html" class="footer-nav-link d-flex gap-2 align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                          <path d="M8.57894 9L12.2456 5M12.2456 5L8.57894 0.999999M12.2456 5L1.24561 5"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Help & Support
+                      </a>
+                    </li>
+                    <li class="footer-nav-list-item py-2">
+                      <a href="privacy-policy.html" class="footer-nav-link d-flex gap-2 align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                          <path d="M8.57894 9L12.2456 5M12.2456 5L8.57894 0.999999M12.2456 5L1.24561 5"
+                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Trust & Safety
+                      </a>
+                    </li>
+
+                  
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Modal -->
+  <div class="modal fade categor" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header px-5 py-4 d-flex justify-content-between items-placeholder border-bottom">
+          <div>
+            <h3 class="text-dark-300 fw-bold text-24">All Categories</h3>
+          </div>
+          <div>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="16" fill="#FF3838" />
+                <path d="M22.2188 9.77759L8.88614 23.1109" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+                <path d="M22.2188 23.1099L8.88614 9.77654" stroke="white" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="modal-body px-5 py-4">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="row">
+                <div class="col-lg-4 mb-4">
+                  <div>
+                    <h4 class="text-18 fw-semibold text-dark-300 mb-2">
+                      Logo & Brand Identity
+                    </h4>
+                    <nav class="category-nav">
+                      <ul>
+                        <li>
+                          <a href="#"> Logo Design </a>
+                        </li>
+                        <li>
+                          <a href="#"> Brand Style Guides</a>
+                        </li>
+                        <li>
+                          <a href="#"> Business Cards & Stationery</a>
+                        </li>
+                        <li>
+                          <a href="#">Fonts & Typography </a>
+                        </li>
+                        <li>
+                          <a href="#"> Logo Maker Tool </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                  <div>
+                    <h4 class="text-18 fw-semibold text-dark-300 mb-2">
+                      Web & App Design
+                    </h4>
+                    <nav class="category-nav">
+                      <ul>
+                        <li>
+                          <a href="#"> Website Design </a>
+                        </li>
+                        <li>
+                          <a href="#"> App Design</a>
+                        </li>
+                        <li>
+                          <a href="#"> UX Design</a>
+                        </li>
+                        <li>
+                          <a href="#">Landing Page Design</a>
+                        </li>
+                        <li>
+                          <a href="#"> Icon Design </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                  <div>
+                    <h4 class="text-18 fw-semibold text-dark-300 mb-2">
+                      Visual Design
+                    </h4>
+                    <nav class="category-nav">
+                      <ul>
+                        <li>
+                          <a href="#"> Image Editing </a>
+                        </li>
+                        <li>
+                          <a href="#"> Presentation Design</a>
+                        </li>
+                        <li>
+                          <a href="#">Background Removal</a>
+                        </li>
+                        <li>
+                          <a href="#"> Infographic Design </a>
+                        </li>
+                        <li>
+                          <a href="#"> Vector Tracing </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <div>
+                    <h4 class="text-18 fw-semibold text-dark-300 mb-2">
+                      Art & Illustration
+                    </h4>
+                    <nav class="category-nav">
+                      <ul>
+                        <li>
+                          <a href="#"> Illustration </a>
+                        </li>
+                        <li>
+                          <a href="#">AI ArtistsNEW</a>
+                        </li>
+                        <li>
+                          <a href="#"> Children's Book Illustration</a>
+                        </li>
+                        <li>
+                          <a href="#">Fonts & Typography </a>
+                        </li>
+                        <li>
+                          <a href="#"> Portraits & Caricatures</a>
+                        </li>
+                        <li>
+                          <a href="#"> Cartoons & Comics </a>
+                        </li>
+                        <li>
+                          <a href="#"> Pattern Design </a>
+                        </li>
+                        <li>
+                          <a href="#"> Tattoo Design </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <div>
+                    <h4 class="text-18 fw-semibold text-dark-300 mb-2">
+                      Product & Gaming
+                    </h4>
+                    <nav class="category-nav">
+                      <ul>
+                        <li>
+                          <a href="#">Industrial & Product Design </a>
+                        </li>
+                        <li>
+                          <a href="#"> Character Modeling</a>
+                        </li>
+                        <li>
+                          <a href="#"> Game Art</a>
+                        </li>
+                        <li>
+                          <a href="#"> Graphics for Streamers</a>
+                        </li>
+                        <li>
+                          <a href="#"> Brochure Design Poster</a>
+                        </li>
+                        <li>
+                          <a href="#"> Design Catalog Design </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <div>
+                    <h4 class="text-18 fw-semibold text-dark-300 mb-2">
+                      3D Design
+                    </h4>
+                    <nav class="category-nav">
+                      <ul>
+                        <li>
+                          <a href="#"> 3D Architecture </a>
+                        </li>
+                        <li>
+                          <a href="">3D Industrial Design</a>
+                        </li>
+                        <li>
+                          <a href="">3D Industrial Design</a>
+                        </li>
+                        <li>
+                          <a href="">3D Fashion & Garment</a>
+                        </li>
+                        <li>
+                          <a href="">3D Printing Characters</a>
+                        </li>
+                        <li>
+                          <a href="">3D Landscape</a>
+                        </li>
+                        <li>
+                          <a href="">3D Game Art</a>
+                        </li>
+                        <li>
+                          <a href="#"> 3D Jewelry Design </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div>
+                <img src="assets/img/others/category.png" class="rounded-3 img-fluid w-100" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal End -->
+
+  <!-- Jquery -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- Migrate  -->
+  <script src="assets/js/jquery-migrate.min.js"></script>
+  <!-- CounterUp  -->
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <!-- Waypoint -->
+  <script src="assets/js/waypoints.min.js"></script>
+  <!-- Nice Select -->
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <!-- Isotope -->
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <!-- ImgLoaded -->
+  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+  <!-- AOS -->
+  <script src="assets/js/aos.js"></script>
+  <!-- Quill Editor -->
+  <script src="assets/js/quill.js"></script>
+  <!-- GLightBox -->
+  <script src="assets/js/glightbox.min.js"></script>
+  <!-- Popper -->
+  <script src="assets/js/popper.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!-- Main -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
